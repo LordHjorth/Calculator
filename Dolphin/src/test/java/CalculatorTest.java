@@ -45,4 +45,14 @@ class CalculatorTest {
 
     }
 
+    @Test
+    void testIncludingDelimiter() {
+        Calculator calculator = new Calculator();
+
+        int actual = calculator.Add("//s\n450s123s16\n124s152");
+
+        assertEquals(865, actual, "Empty string");
+
+    }
+
 }
