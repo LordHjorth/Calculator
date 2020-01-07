@@ -11,7 +11,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 withMaven() {
-                    sh 'mvn compile'
                 }
             }
         }

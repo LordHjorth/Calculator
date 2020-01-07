@@ -18,7 +18,7 @@ class CalculatorTest {
     void testEmptyString() {
         Calculator calculator = new Calculator();
 
-        int actual = calculator.Add("1");
+        int actual = calculator.Add("");
 
 
         assertEquals(0, actual, "Empty string");
@@ -32,6 +32,16 @@ class CalculatorTest {
         int actual = calculator.Add("450");
 
         assertEquals(450, actual, "Empty string");
+
+    }
+
+    @Test
+    void testIncludingNewLine() {
+        Calculator calculator = new Calculator();
+
+        int actual = calculator.Add("450,123,16\n124,152");
+
+        assertEquals(865, actual, "Empty string");
 
     }
 
