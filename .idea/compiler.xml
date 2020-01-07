@@ -6,11 +6,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Calculate" />
+        <module name="Calculates" />
         <module name="Dolphin" />
         <module name="Kata" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Calculate" target="1.5" />
+      <module name="Calculates" target="1.5" />
       <module name="Dolphin" target="1.5" />
       <module name="Kata" target="1.5" />
     </bytecodeTargetLevel>

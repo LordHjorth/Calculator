@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Calculator.iml" filepath="$PROJECT_DIR$/.idea/Calculator.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Dolphin/Dolphin.iml" filepath="$PROJECT_DIR$/Dolphin/Dolphin.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../Kata/Kata.iml" filepath="$PROJECT_DIR$/../Kata/Kata.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Dolphin/Calculate.iml" filepath="$PROJECT_DIR$/Dolphin/Calculate.iml" />
     </modules>
   </component>
 </project>
