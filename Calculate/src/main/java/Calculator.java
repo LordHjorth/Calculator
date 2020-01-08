@@ -7,11 +7,12 @@ public class Calculator {
         System.out.println("HEJ");
     }
 
-    public int Add(String numbers) {
+    public int Add(String numbers) throws NegativeInputExpception {
 
 
         if (numbers == null || numbers.length() == 0)
             return 0;
+
 
         int sum = 0;
 
@@ -30,16 +31,31 @@ public class Calculator {
         }
 
 
+        String errorMessage = "Following negative numbers occurered: ";
+        boolean error = false;
+
+
         for (String line : lines) {
 
             String[] split = line.split(delimeter);
 
             for (String s : split) {
-                sum += Integer.parseInt(s);
+
+                int i = Integer.parseInt(s);
+                if (i < 0){
+                    errorMessage += ", " + i;
+                    error = true;
+                }
+                sum += i;
             }
 
 
         }
+
+        if(error){
+            throw new NegativeInputExpception(errorMessage);
+        }
+
 
         return sum;
     }

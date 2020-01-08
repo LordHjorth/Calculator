@@ -16,7 +16,7 @@ public class CalculatorDelimiterTest {
     }
 
     @Given("^that the delimiter is \"([^\"]*)\" and a is (\\d+) and b is (\\d+)$")
-    public void thatTheDelimiterIsAndAIsAndBIs(String arg0, int arg1, int arg2) {
+    public void thatTheDelimiterIsAndAIsAndBIs(String arg0, int arg1, int arg2) throws NegativeInputExpception {
         actual = calculator.Add("//" + arg0 + "\n" + arg1 + arg0 + arg2);
     }
 
