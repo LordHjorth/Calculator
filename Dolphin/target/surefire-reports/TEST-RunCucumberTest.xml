@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CalculatorTest" time="0" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="RunCucumberTest" time="0.383" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="gopherProxySet" value="false"/>
     <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
@@ -59,9 +59,7 @@
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="testAdd" classname="CalculatorTest" time="0"/>
-  <testcase name="testIncludingNewLine" classname="CalculatorTest" time="0"/>
-  <testcase name="testEmptyString" classname="CalculatorTest" time="0"/>
-  <testcase name="testIncludingDelimiter" classname="CalculatorTest" time="0"/>
-  <testcase name="testSingleInput" classname="CalculatorTest" time="0"/>
+  <testcase name="Given that a is 2 and b is 4" classname="Scenario: Is it adding correctly?" time="0.002"/>
+  <testcase name="Then c should be 6" classname="Scenario: Is it adding correctly?" time="0"/>
+  <testcase name="Scenario: Is it adding correctly?" classname="Scenario: Is it adding correctly?" time="0"/>
 </testsuite>

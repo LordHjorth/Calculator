@@ -1,57 +1,58 @@
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.Test;
 
-class CalculatorTest {
+import static org.junit.Assert.assertEquals;
+
+public class CalculatorTest {
 
     @Test
-    void testAdd() {
+    public void testAdd() {
 
         Calculator calculator = new Calculator();
 
         int actual = calculator.Add("20,20,1,51,23,51");
 
-        assertEquals(166, actual, "Adding");
+        assertEquals(166, actual);
 
     }
 
     @Test
-    void testEmptyString() {
+    public void testEmptyString() {
         Calculator calculator = new Calculator();
 
         int actual = calculator.Add("");
 
 
-        assertEquals(0, actual, "Empty string");
+        assertEquals(0, actual);
 
     }
 
     @Test
-    void testSingleInput() {
+    public void testSingleInput() {
         Calculator calculator = new Calculator();
 
         int actual = calculator.Add("450");
 
-        assertEquals(450, actual, "Empty string");
+        assertEquals(450, actual);
 
     }
 
     @Test
-    void testIncludingNewLine() {
+    public void testIncludingNewLine() {
         Calculator calculator = new Calculator();
 
         int actual = calculator.Add("450,123,16\n124,152");
 
-        assertEquals(865, actual, "Empty string");
+        assertEquals(865, actual);
 
     }
 
     @Test
-    void testIncludingDelimiter() {
+    public void testIncludingDelimiter() {
         Calculator calculator = new Calculator();
 
         int actual = calculator.Add("//s\n450s123s16\n124s152");
 
-        assertEquals(865, actual, "Empty string");
+        assertEquals(865, actual);
 
     }
 
