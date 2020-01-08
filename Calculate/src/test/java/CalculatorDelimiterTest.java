@@ -7,18 +7,13 @@ import static org.junit.Assert.assertEquals;
 
 public class CalculatorDelimiterTest {
 
-
     Calculator calculator;
     int actual;
-
-    int smallChange;
-
 
     @Before
     public void before() {
         calculator = new Calculator();
     }
-
 
     @Given("^that the delimiter is \"([^\"]*)\" and a is (\\d+) and b is (\\d+)$")
     public void thatTheDelimiterIsAndAIsAndBIs(String arg0, int arg1, int arg2) {
