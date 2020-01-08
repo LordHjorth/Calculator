@@ -11,6 +11,8 @@ public class CalculatorDelimiterTest {
     Calculator calculator;
     int actual;
 
+    int smallChange;
+
 
     @Before
     public void before() {
