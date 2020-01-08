@@ -15,13 +15,16 @@ public class Calculator {
 
         int sum = 0;
 
+
+        numbers = numbers.replace("\\n", "\n");
+
         String[] x = numbers.split("\n");
+
 
         ArrayList<String> lines = new ArrayList<String>(Arrays.asList(x));
         String delimeter = ",";
 
         if (lines.get(0).startsWith("//")) {
-            System.out.println("Changes delimiter");
             delimeter = lines.get(0).replace("//", "");
             lines.remove(0);
         }
@@ -40,7 +43,5 @@ public class Calculator {
 
         return sum;
     }
-
-
 }
 
