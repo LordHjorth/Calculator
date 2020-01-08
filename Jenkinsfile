@@ -5,12 +5,18 @@ pipeline {
         stage('Init') {
             steps {
                 echo 'Initializing..'
+                withMaven() {
+					sh 'cd Dolphin'
+					sh 'mvn install'
+				}
             }
         }
         stage('Build') {
             steps {
                 echo 'Building..'
                 withMaven() {
+                	sh 'cd Dolphin'
+                	sh 'mvn build'
                 }
             }
         }
@@ -18,6 +24,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 withMaven() {
+                	sh 'cd Dolphin'
                     sh 'mvn test'
                 }
             }
