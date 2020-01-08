@@ -6,7 +6,6 @@ pipeline {
             steps {
                 echo 'Initializing..'
                 withMaven() {
-					sh 'cd Dolphin'
 					sh 'mvn install'
 				}
             }
@@ -15,7 +14,6 @@ pipeline {
             steps {
                 echo 'Building..'
                 withMaven() {
-                	sh 'cd Dolphin'
                 	sh 'mvn build'
                 }
             }
@@ -24,7 +22,6 @@ pipeline {
             steps {
                 echo 'Testing..'
                 withMaven() {
-                	sh 'cd Dolphin'
                     sh 'mvn test'
                 }
             }
